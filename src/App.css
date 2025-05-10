@@ -1,0 +1,205 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(13, 226, 13);
+  padding: 10px 20px;
+  color: white;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header .tagline {
+  font-size: 1.2rem;
+  flex: 1;
+  text-align: center;
+}
+
+header .login-btn {
+  background-color: #ffffff;
+  color: rgb(35, 217, 35);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+header .login-btn:hover {
+  background-color: #ffe0b2;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: bisque;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  background-color: #ff7043;
+}
+
+/* Recipe grid styling */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.card .time {
+  padding: 8px;
+  background-color: #ffe0b2;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+/* Login Modal styling */
+.login-modal {
+  display: flex; /* Ensure modal is shown */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-content h2 {
+  margin-bottom: 15px;
+}
+
+.login-content input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-content button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: rgb(13, 226, 13);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-content button:hover {
+  background-color: #0aae0a;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+}
+
+.recipe-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.recipe-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #8B0000;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+ul, ol {
+  text-align: left;
+  margin: 1rem auto;
+  display: inline-block;
+  text-align: left;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: #333;
+}
